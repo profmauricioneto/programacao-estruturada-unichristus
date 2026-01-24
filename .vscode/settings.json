@@ -1,0 +1,41 @@
+{
+    // Configurações do Java
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.saveActions.organizeImports": true,
+    
+    // Configurações do Maven
+    "maven.terminal.useJavaHome": true,
+    "maven.executable.preferMavenWrapper": true,
+    
+    // Configurações de formatação
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    
+    // Configurações específicas por linguagem
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    
+    // Configurações de arquivos
+    "files.exclude": {
+        "**/target": true,
+        "**/node_modules": true
+    },
+    "files.encoding": "utf8",
+    "files.eol": "\n"
+}
