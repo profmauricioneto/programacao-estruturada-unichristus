@@ -14,6 +14,3 @@ function definirAlarme() {
 }
 
 let setAlarme = setInterval(() => definirAlarme(), 1000);
-
-// let botao = document.getElementById('btnCriar');
-// botao.addEventListener('click', () => setAlarme());
