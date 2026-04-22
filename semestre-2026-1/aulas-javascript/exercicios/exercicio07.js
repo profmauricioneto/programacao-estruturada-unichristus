@@ -24,6 +24,14 @@ function filtrarPelaQuantidade(quantidadeMinima) {
   return produtosFiltrados;
 }
 
+// TODO: crie uma função que receba um parâmetro de valor e retorne um array com os elementos que possuem o valor acima do passado por parâmetro.
+function filtrarPeloPreco(preco) {
+  let produtosFiltrados = estoque.filter(function (item) {
+    return item.preco >= preco;
+  });
+  return produtosFiltrados;
+}
+
 function verificarEstoque(nomeProduto) {
   let encontrou = false;
   // for (let i = 0; i < estoque.length; i++) {
@@ -62,8 +70,9 @@ function menu() {
   console.log(`2 - Verificar se um produto esta no estoque.`);
   console.log(`3 - Mostrar situação do estoque.`);
   console.log(`4 - Filtrar por quantidade.`);
+  console.log(`5 - Filtrar pelo preço.`);
 
-  console.log(`5 - Sair`);
+  console.log(`6 - Sair`);
 }
 // adicionarProduto();
 // console.log(estoque);
@@ -77,25 +86,35 @@ function main() {
       case 1:
         adicionarProduto();
         break;
+
       case 2:
         let nomeProduto = prompt("Digite o nome do produto: ");
         verificarEstoque(nomeProduto);
         break;
+
       case 3:
         console.log(`Estado atual de estoque:`);
         console.log(estoque);
         break;
+
       case 4:
         let quantidadeMinima = parseInt(prompt("Digite a quantidade minima: "));
         console.log(filtrarPelaQuantidade(quantidadeMinima));
         break;
+
       case 5:
+        let preco = parseFloat(prompt("Digite um preço minimo: "));
+        console.log(filtrarPeloPreco(preco));
+        break;
+
+      case 6:
         console.log(`Saindo do Programa!`);
         break;
+
       default:
         console.log(`Nenhuma opção válida foi digitada!`);
     }
-  } while (opcao != 5);
+  } while (opcao != 6);
 }
 
 main();
