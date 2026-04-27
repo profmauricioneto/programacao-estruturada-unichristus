@@ -6,12 +6,7 @@ const pedidos = [
   { id: 5, cliente: "Fernanda", valor: 300.0, status: "entregue" },
 ];
 
-// Desenvolva um programa em JavaScript que:
-// 1.Utilize o método filter para criar um novo array contendo apenas os pedidos com status “entregue”;
-// 2. Considere apenas os pedidos cujo valor seja maior ou igual a R$ 200,00;
-// 3. Exiba o novo array resultante no console.
-
-pedidos
+let filtroEntregues = pedidos
   .filter(function (item) {
     return item.status === "entregue";
   })
@@ -19,5 +14,5 @@ pedidos
     return item.valor >= 200;
   })
   .forEach(function (item) {
-    console.log(`Cliente ${item.cliente} - ID: ${item.id}`);
+    console.log(`Cliente: ${item.cliente}`);
   });
