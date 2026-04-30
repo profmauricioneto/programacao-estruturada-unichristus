@@ -11,3 +11,18 @@ const produtos = [
 // b. Utilize map() para criar um novo array com o nome e o preço após o desconto.
 // c. Exiba o resultado com forEach() no formato:
 // Produto: Teclado Mecânico | Novo preço: R$179.91
+
+let produtosFiltrados = produtos.filter((item) => {
+  return item.preco >= 100;
+});
+console.log(produtosFiltrados);
+
+let produtosComDesconto = produtosFiltrados
+  .map((item) => {
+    return { nome: item.nome, preco: item.preco * 0.9 };
+  })
+  .forEach((item) => {
+    console.log(
+      `Produto: ${item.nome} | Novo preço: R$ ${item.preco.toFixed(2)}`,
+    );
+  });

@@ -1,0 +1,38 @@
+[
+   {
+      "id": 1,
+      "titulo":"estudar js",
+      "decricao":"Estudar mais JavaScript",
+      "concluido":true
+   },
+   {
+      "id": 2,
+      "titulo":"estudar java",
+      "decricao":"Estudar mais Java Basico",
+      "concluido":true
+   },
+   {
+      "id": 3,
+      "titulo":"estudar html",
+      "decricao":"Estudar mais HTML/CSS",
+      "concluido":false
+   },
+   {
+      "id": 4,
+      "titulo":"estudar kotlin",
+      "decricao":"Estudar mais Kotlin para Android",
+      "concluido":false
+   },
+   {
+      "id": 5,
+      "titulo":"estudar react",
+      "decricao":"Estudar mais a biblioteca React",
+      "concluido":true
+   },
+   {
+      "id": 6,
+      "titulo":"estudar python",
+      "decricao":"Estudar mais Python",
+      "concluido":false
+   }
+]
