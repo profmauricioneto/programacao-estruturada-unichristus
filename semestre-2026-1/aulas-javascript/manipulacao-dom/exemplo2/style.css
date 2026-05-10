@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#btn-element {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 5px;
+}
+
+.card {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.fav {
+    background-color: lightyellow;
+}
