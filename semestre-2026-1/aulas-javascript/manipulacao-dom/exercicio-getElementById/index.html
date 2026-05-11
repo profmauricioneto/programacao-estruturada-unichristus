@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Turma — Fase 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel da Turma <span class="fase-badge">Fase 1 — getElementById</span></h1>
+        <span id="semestre-header">Semestre: 2026.1</span>
+    </header>
+
+    <div class="container">
+
+        <!-- Informações da Turma -->
+        <div class="card">
+            <h2>Informações da Turma</h2>
+
+            <div class="info-row">
+                <label>Disciplina:</label>
+                <span id="nome-disciplina">Programação Estruturada</span>
+            </div>
+            <div class="info-row">
+                <label>Turma:</label>
+                <span id="codigo-turma">SI/ADS-2026</span>
+            </div>
+            <div class="info-row">
+                <label>Professor:</label>
+                <span id="nome-professor">Prof. Maurício Moreira</span>
+            </div>
+            <div class="info-row">
+                <label>Semestre:</label>
+                <span id="semestre-info">2026.1</span>
+            </div>
+        </div>
+
+        <!-- Editar Turma -->
+        <div class="card">
+            <h2>Editar Informações</h2>
+
+            <div class="info-row">
+                <label>Nova turma:</label>
+                <input type="text" id="input-turma" placeholder="Ex: SI-2026.1">
+                <button>Atualizar Turma</button>
+            </div>
+
+            <div class="info-row">
+                <label>Novo semestre:</label>
+                <input type="text" id="input-semestre" placeholder="Ex: 2026.1">
+                <button>Atualizar Semestre</button>
+            </div>
+
+            <div class="info-row">
+                <label>Novo professor:</label>
+                <input type="text" id="input-professor" placeholder="Nome do professor">
+                <button>Atualizar Professor</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

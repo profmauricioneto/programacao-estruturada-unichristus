@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #1a3a5c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  color: #1a3a5c;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.info-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.info-row label {
+  font-weight: 600;
+  min-width: 100px;
+  color: #555;
+}
+.info-row span {
+  background: #eef2ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 220px;
+}
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1d4ed8;
+}
+button.sec {
+  background: #6b7280;
+}
+button.sec:hover {
+  background: #4b5563;
+}
+button.verde {
+  background: #16a34a;
+}
+button.verde:hover {
+  background: #15803d;
+}
+button.laranja {
+  background: #ea580c;
+}
+button.laranja:hover {
+  background: #c2410c;
+}
+
+/* Disciplinas */
+.disciplinas-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.disciplinas-lista li {
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.obrigatoria {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+}
+.eletiva {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+}
+.oculta {
+  display: none !important;
+}
+
+.legenda {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+}
+.legenda span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-obrig {
+  background: #ef4444;
+}
+.dot-elet {
+  background: #22c55e;
+}
+
+.acoes-disciplinas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+#contador-resultado {
+  font-weight: bold;
+  color: #1a3a5c;
+  font-size: 1rem;
+  padding: 6px 14px;
+  background: #dbeafe;
+  border-radius: 20px;
+}
+
+.fase-badge {
+  background: #9333ea;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+.hint {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #78350f;
+  margin-top: 16px;
+}
+.novo-badge {
+  background: #f3e8ff;
+  border: 1px solid #9333ea;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  color: #7e22ce;
+  font-weight: 600;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Turma — Fase 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel da Turma <span class="fase-badge">Fase 2 — getElementsByTagName</span></h1>
+        <span id="semestre-header">Semestre: 2026.1</span>
+    </header>
+
+    <div class="container">
+
+        <!-- Informações da Turma (Fase 1 - mantida) -->
+        <div class="card">
+            <h2>Informações da Turma</h2>
+            <div class="info-row">
+                <label>Disciplina:</label>
+                <span id="nome-disciplina">Programação Estruturada</span>
+            </div>
+            <div class="info-row">
+                <label>Turma:</label>
+                <span id="codigo-turma">SI-2025-A</span>
+            </div>
+            <div class="info-row">
+                <label>Professor:</label>
+                <span id="nome-professor">Prof. Maurício Moreira</span>
+            </div>
+            <div class="info-row">
+                <label>Semestre:</label>
+                <span id="semestre-info">2025.1</span>
+            </div>
+
+            <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="text" id="input-turma" placeholder="Novo código de turma">
+                <button>Atualizar Turma</button>
+                <input type="text" id="input-semestre" placeholder="Novo semestre">
+                <button>Atualizar Semestre</button>
+            </div>
+        </div>
+
+        <!-- Disciplinas da Turma (NOVO — Fase 2) -->
+        <div class="card">
+            <h2>Disciplinas da Turma <span class="novo-badge">NOVO nesta fase</span></h2>
+
+            <div class="acoes-disciplinas">
+                <button>Contar Disciplinas</button>
+                <button class="secundario">Destacar Todas</button>
+                <button class="secundario">Remover Destaque</button>
+                <span id="contador-resultado" style="display:none;"></span>
+            </div>
+
+            <ul class="disciplinas-lista" id="lista-disciplinas">
+                <li>Programação Estruturada</li>
+                <li>Banco de Dados I</li>
+                <li>Engenharia de Software</li>
+                <li>Cálculo I</li>
+                <li>Álgebra Linear</li>
+                <li>Redes de Computadores</li>
+            </ul>
+        </div>
+
+        <div class="hint">
+            <strong>getElementsByTagName:</strong> Retorna uma <em>HTMLCollection</em> com todos os elementos da tag
+            informada. Use um laço <code>for</code> para percorrer a coleção.
+        </div>
+
+    </div>
+</body>
+
+</html>
