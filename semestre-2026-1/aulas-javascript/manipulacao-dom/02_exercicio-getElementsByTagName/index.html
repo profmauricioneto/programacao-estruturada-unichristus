@@ -50,9 +50,9 @@
             <h2>Disciplinas da Turma <span class="novo-badge">NOVO nesta fase</span></h2>
 
             <div class="acoes-disciplinas">
-                <button>Contar Disciplinas</button>
-                <button class="secundario">Destacar Todas</button>
-                <button class="secundario">Remover Destaque</button>
+                <button onclick="contarDisciplinas()">Contar Disciplinas</button>
+                <button class="secundario" onclick="destacarDisciplinas()">Destacar Todas</button>
+                <button class="secundario" onclick="removerDestaqueDisciplinas()">Remover Destaque</button>
                 <span id="contador-resultado" style="display:none;"></span>
             </div>
 
@@ -72,6 +72,8 @@
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

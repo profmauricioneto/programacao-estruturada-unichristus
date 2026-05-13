@@ -44,24 +44,32 @@
             <h2>Editar Informações</h2>
 
             <div class="info-row">
+                <label>Nova Disciplina:</label>
+                <input type="text" id="input-disciplina" placeholder="Ex: programação estruturada">
+                <button onclick="atualizarDisciplina()">Atualizar Disciplina</button>
+            </div>
+
+            <div class="info-row">
                 <label>Nova turma:</label>
                 <input type="text" id="input-turma" placeholder="Ex: SI-2026.1">
-                <button>Atualizar Turma</button>
+                <button onclick="atualizarTurma()">Atualizar Turma</button>
             </div>
 
             <div class="info-row">
                 <label>Novo semestre:</label>
                 <input type="text" id="input-semestre" placeholder="Ex: 2026.1">
-                <button>Atualizar Semestre</button>
+                <button onclick="atualizarSemestre()">Atualizar Semestre</button>
             </div>
 
             <div class="info-row">
                 <label>Novo professor:</label>
                 <input type="text" id="input-professor" placeholder="Nome do professor">
-                <button>Atualizar Professor</button>
+                <button onclick="atualizarProfessor()">Atualizar Professor</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

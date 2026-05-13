@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Turma — Fase 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel da Turma <span class="fase-badge">Fase 4 — querySelector</span></h1>
+        <span id="semestre-header">Semestre: 2026.1</span>
+    </header>
+
+    <div class="container">
+
+        <!-- Informações da Turma (Fase 1 - resumida) -->
+        <div class="card">
+            <h2>Informações da Turma</h2>
+            <div class="info-row">
+                <label>Turma:</label><span id="codigo-turma">SI/ADS-2026</span>
+                <label>Semestre:</label><span id="semestre-info">2026.1</span>
+            </div>
+            <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="text" id="input-turma" placeholder="Novo código">
+                <button>Atualizar Turma</button>
+            </div>
+        </div>
+
+        <!-- Turmas por Período (NOVO — Fase 4) -->
+        <div class="card">
+            <h2>Turmas por Período <span class="novo-badge">NOVO nesta fase</span></h2>
+
+            <div class="acoes">
+                <button>Primeiro Turno (querySelector)</button>
+                <button style="background:#ca8a04;">Manhã
+                    (querySelectorAll)</button>
+                <button style="background:#ea580c;">Tarde
+                    (querySelectorAll)</button>
+                <button style="background:#4f46e5;">Noite
+                    (querySelectorAll)</button>
+                <button class="sec">Limpar</button>
+            </div>
+
+            <div class="turmas-grid">
+                <div class="turma-card" data-periodo="manha" data-codigo="SI-A">
+                    <strong>SI-2026-A</strong><span>☀️ Manhã · 30 alunos</span>
+                </div>
+                <div class="turma-card" data-periodo="manha" data-codigo="SI-B">
+                    <strong>SI-2026-B</strong><span>☀️ Manhã · 28 alunos</span>
+                </div>
+                <div class="turma-card" data-periodo="tarde" data-codigo="ADS-A">
+                    <strong>ADS-2026-A</strong><span>🌤 Tarde · 35 alunos</span>
+                </div>
+                <div class="turma-card" data-periodo="tarde" data-codigo="ADS-B">
+                    <strong>ADS-2026-B</strong><span>🌤 Tarde · 32 alunos</span>
+                </div>
+                <div class="turma-card" data-periodo="noite" data-codigo="SI-N">
+                    <strong>SI-2026-N</strong><span>🌙 Noite · 40 alunos</span>
+                </div>
+                <div class="turma-card" data-periodo="noite" data-codigo="ADS-N">
+                    <strong>ADS-2026-N</strong><span>🌙 Noite · 38 alunos</span>
+                </div>
+            </div>
+
+            <div class="hint">
+                💡 <strong>querySelector vs querySelectorAll:</strong><br>
+                <code>querySelector("[data-periodo='manha']")</code> → retorna <strong>somente o primeiro</strong>
+                elemento.<br>
+                <code>querySelectorAll("[data-periodo='manha']")</code> → retorna <strong>todos</strong> os elementos
+                que combinam.
+            </div>
+        </div>
+
+        <!-- Disciplinas com filtro (Fases 2 e 3 mantidas) -->
+        <div class="card">
+            <h2>Disciplinas da Turma</h2>
+            <div class="acoes">
+                <button onclick="mostrarSo('obrigatoria')" style="background:#dc2626;">Obrigatórias</button>
+                <button onclick="mostrarSo('eletiva')" style="background:#16a34a;">Eletivas</button>
+                <button>Todas</button>
+                <!-- NOVO: selecionar por seletor CSS -->
+                <button style="background:#0891b2;">1ª Eletiva
+                    (querySelector)</button>
+            </div>
+            <ul class="disciplinas-lista" id="lista-disciplinas">
+                <li class="obrigatoria" id="disc-1">📕 Programação Estruturada</li>
+                <li class="obrigatoria" id="disc-2">📕 Banco de Dados I</li>
+                <li class="obrigatoria" id="disc-3">📕 Engenharia de Software</li>
+                <li class="obrigatoria" id="disc-4">📕 Redes de Computadores</li>
+                <li class="eletiva" id="disc-5">📗 Inteligência Artificial</li>
+                <li class="eletiva" id="disc-6">📗 Desenvolvimento Mobile</li>
+                <li class="eletiva" id="disc-7">📗 Segurança da Informação</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
