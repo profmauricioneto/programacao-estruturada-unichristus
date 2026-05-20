@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Turma — Fase 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel da Turma <span class="fase-badge">Fase 6 — Eventos</span></h1>
+        <span id="notificacao-header">Aluno adicionado!</span>
+    </header>
+
+    <div class="container">
+
+        <!-- Cadastro de Alunos -->
+        <div class="card">
+            <h2>👥 Cadastro de Alunos <span class="novo-badge">EVENTOS adicionados nesta fase</span></h2>
+
+            <!-- Preview em tempo real (onchange / oninput) -->
+            <div id="preview-aluno">Preencha os campos abaixo para ver o preview em tempo real...</div>
+
+            <div class="form-aluno">
+                <div>
+                    <label>Nome do Aluno</label>
+                    <input type="text" id="input-nome" placeholder="Ex: Ana Sousa" style="width:200px;">
+                </div>
+                <div>
+                    <label>Matrícula</label>
+                    <input type="text" id="input-matricula" placeholder="Ex: 2025001" style="width:120px;">
+                </div>
+                <div>
+                    <label>Status</label>
+                    <select id="input-status">
+                        <option value="ativo">Ativo</option>
+                        <option value="trancado">Trancado</option>
+                        <option value="irregular">Irregular</option>
+                    </select>
+                </div>
+                <button>Adicionar Aluno</button>
+            </div>
+
+            <div class="acoes">
+                <span id="total-alunos">Total: 0 aluno(s)</span>
+                <button class="vermelho">Remover Todos</button>
+            </div>
+
+            <table class="tabela-alunos" id="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-alunos">
+                    <tr id="linha-vazia">
+                        <td colspan="5" class="empty-state">Nenhum aluno cadastrado.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="hint">
+                <strong>Eventos usados nesta fase:</strong><br>
+                oninput — dispara a cada tecla digitada no campo<br>
+                onchange — dispara quando o valor do select muda<br>
+                onfocus / onblur — disparam ao entrar/sair de um campo<br>
+                onmouseover / onmouseout — disparam ao passar/sair o mouse<br>
+                onclick — disparado no clique (usado desde a Fase 1)
+            </div>
+        </div>
+
+        <!-- Log de Eventos (NOVO — Fase 6) -->
+        <div class="card">
+            <h2>Log de Eventos <span class="novo-badge">NOVO nesta fase</span></h2>
+            <div id="log-eventos">
+                <p style="color:#475569;">// Os eventos ocorridos aparecerão aqui...</p>
+            </div>
+            <div style="margin-top:10px;">
+                <button
+                    onclick="document.getElementById('log-eventos').innerHTML='<p style=color:#475569>// Log limpo.</p>'"
+                    class="vermelho" style="font-size:0.8rem; padding:5px 12px;">Limpar Log</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

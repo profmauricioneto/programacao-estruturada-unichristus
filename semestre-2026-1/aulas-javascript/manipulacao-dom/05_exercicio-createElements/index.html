@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Turma — Fase 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel da Turma <span class="fase-badge">Fase 5 — createElement / appendChild</span></h1>
+        <span id="semestre-header">Semestre: 2026.1</span>
+    </header>
+
+    <div class="container">
+
+        <!-- Card resumo (fases anteriores) -->
+        <div class="card">
+            <h2>Informações da Turma</h2>
+            <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                <span>Turma: <strong id="codigo-turma">SI-2026-A</strong></span>
+                <span>Semestre: <strong id="semestre-info">2026.1</strong></span>
+                <span>Alunos cadastrados: <strong id="total-alunos-header">0</strong></span>
+            </div>
+        </div>
+
+        <!-- Cadastro de Alunos (NOVO — Fase 5) -->
+        <div class="card">
+            <h2>Cadastro de Alunos <span class="novo-badge">NOVO nesta fase</span></h2>
+
+            <div class="form-aluno">
+                <div>
+                    <label>Nome do Aluno</label>
+                    <input type="text" id="input-nome" placeholder="Ex: Ana Sousa" style="width: 200px;">
+                </div>
+                <div>
+                    <label>Matrícula</label>
+                    <input type="text" id="input-matricula" placeholder="Ex: 2025001" style="width: 120px;">
+                </div>
+                <div>
+                    <label>Status</label>
+                    <select id="input-status">
+                        <option value="ativo">Ativo</option>
+                        <option value="trancado">Trancado</option>
+                        <option value="irregular">Irregular</option>
+                    </select>
+                </div>
+                <button>Adicionar Aluno</button>
+            </div>
+
+            <div class="acoes-tabela">
+                <span id="total-alunos">Total: 0 aluno(s)</span>
+                <button class="vermelho sec">Remover Todos</button>
+            </div>
+
+            <table class="tabela-alunos" id="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-alunos">
+                    <tr id="linha-vazia">
+                        <td colspan="5" class="empty-state">Nenhum aluno cadastrado. Use o formulário acima.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="hint">
+                <strong>createElement + appendChild:</strong><br>
+                1. document.createElement("tr") — cria o elemento<br>
+                2. document.createElement("td") — cria cada célula<br>
+                3. tr.appendChild(td) — insere a célula dentro da linha<br>
+                4. tbody.appendChild(tr) — insere a linha no corpo da tabela<br>
+                5. tr.remove() — remove o elemento diretamente
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

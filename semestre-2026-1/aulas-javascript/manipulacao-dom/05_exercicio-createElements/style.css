@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+header {
+  background: #1a3a5c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.4rem;
+}
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  color: #1a3a5c;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1d4ed8;
+}
+button.vermelho {
+  background: #dc2626;
+}
+button.vermelho:hover {
+  background: #b91c1c;
+}
+button.sec {
+  background: #6b7280;
+}
+
+/* Formulário de aluno */
+.form-aluno {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+.form-aluno div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-aluno label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Tabela de alunos */
+.tabela-alunos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.tabela-alunos thead tr {
+  background: #1a3a5c;
+  color: white;
+}
+.tabela-alunos th,
+.tabela-alunos td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tabela-alunos tbody tr:hover {
+  background: #f0f4f8;
+}
+.tabela-alunos tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+.tabela-alunos tbody tr:nth-child(even):hover {
+  background: #f0f4f8;
+}
+
+.badge-status {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.badge-ativo {
+  background: #dcfce7;
+  color: #15803d;
+}
+.badge-trancado {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.badge-irregular {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.acoes-tabela {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#total-alunos {
+  font-weight: bold;
+  color: #1a3a5c;
+  background: #dbeafe;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.fase-badge {
+  background: #b45309;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+.novo-badge {
+  background: #fef3c7;
+  border: 1px solid #b45309;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  color: #92400e;
+  font-weight: 600;
+}
+.hint {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #000;
+  margin-top: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #9ca3af;
+  padding: 30px;
+  font-size: 0.95rem;
+}
