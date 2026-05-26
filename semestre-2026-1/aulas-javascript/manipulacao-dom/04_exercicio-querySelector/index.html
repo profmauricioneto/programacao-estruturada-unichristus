@@ -26,7 +26,7 @@
             </div>
             <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
                 <input type="text" id="input-turma" placeholder="Novo código">
-                <button>Atualizar Turma</button>
+                <button onclick="atualizarTurma()">Atualizar Turma</button>
             </div>
         </div>
 
@@ -35,12 +35,12 @@
             <h2>Turmas por Período <span class="novo-badge">NOVO nesta fase</span></h2>
 
             <div class="acoes">
-                <button>Primeiro Turno (querySelector)</button>
-                <button style="background:#ca8a04;">Manhã
+                <button onclick="primeiroTurno()">Primeiro Turno (querySelector)</button>
+                <button style="background:#ca8a04;" onclick="turnos('manha')">Manhã
                     (querySelectorAll)</button>
-                <button style="background:#ea580c;">Tarde
+                <button style="background:#ea580c;" onclick="turnos('tarde')">Tarde
                     (querySelectorAll)</button>
-                <button style="background:#4f46e5;">Noite
+                <button style="background:#4f46e5;" onclick="turnos('noite')">Noite
                     (querySelectorAll)</button>
                 <button class="sec">Limpar</button>
             </div>
@@ -79,8 +79,8 @@
         <div class="card">
             <h2>Disciplinas da Turma</h2>
             <div class="acoes">
-                <button onclick="mostrarSo('obrigatoria')" style="background:#dc2626;">Obrigatórias</button>
-                <button onclick="mostrarSo('eletiva')" style="background:#16a34a;">Eletivas</button>
+                <button onclick="" style="background:#dc2626;">Obrigatórias</button>
+                <button onclick="" style="background:#16a34a;">Eletivas</button>
                 <button>Todas</button>
                 <!-- NOVO: selecionar por seletor CSS -->
                 <button style="background:#0891b2;">1ª Eletiva
@@ -98,6 +98,8 @@
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

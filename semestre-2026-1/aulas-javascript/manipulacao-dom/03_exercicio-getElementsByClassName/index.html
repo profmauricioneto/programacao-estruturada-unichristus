@@ -52,7 +52,7 @@
             <!-- Ações Fase 2 (mantidas) -->
             <div class="acoes-disciplinas">
                 <button class="sec">Contar (TagName)</button>
-                <button class="sec">Destacar Todas</button>
+                <button class="sec" onclick="destacarTudo()">Destacar Todas</button>
                 <span id="contador-resultado" style="display:none;"></span>
             </div>
 
@@ -61,7 +61,7 @@
                 <button style="background:#dc2626;" onclick="selecionarObrigatorias()">Somente Obrigatórias</button>
                 <button class="verde" onclick="selecionarEletivas()">Somente Eletivas</button>
                 <button onclick="mostrarTodas()">Mostrar Todas</button>
-                <button class="laranja">Destacar Obrigatórias</button>
+                <button class="laranja" onclick="destacarObrigatorias()">Destacar Obrigatórias</button>
             </div>
 
             <ul class="disciplinas-lista" id="lista-disciplinas">

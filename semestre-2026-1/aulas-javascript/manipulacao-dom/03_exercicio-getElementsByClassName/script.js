@@ -35,3 +35,20 @@ function mostrarTodas() {
     disciplinasObrigatorias[i].classList.remove("oculta");
   }
 }
+
+function destacarObrigatorias() {
+  let elementosObrigatorios = document.getElementsByClassName("obrigatoria");
+  for (let i = 0; i < elementosObrigatorios.length; i++) {
+    elementosObrigatorios[i].classList.toggle("destaque-obrigatoria");
+  }
+}
+
+function destacarTudo() {
+  let obrigatorios = document.getElementsByClassName("obrigatoria");
+  let eletivas = document.getElementsByClassName("eletiva");
+  let totalDisciplinas = [...obrigatorios, ...eletivas];
+
+  for (let i = 0; i < totalDisciplinas.length; i++) {
+    totalDisciplinas[i].classList.toggle("destaque-tudo");
+  }
+}

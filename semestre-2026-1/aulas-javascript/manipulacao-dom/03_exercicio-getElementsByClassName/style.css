@@ -194,3 +194,13 @@ button.laranja:hover {
   color: #7e22ce;
   font-weight: 600;
 }
+
+.destaque-obrigatoria {
+  background: #78310f;
+  border: 1px solid #ea580c;
+  color: #fff;
+}
+
+.destaque-tudo {
+  border: 2px solid blue;
+}
