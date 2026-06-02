@@ -14,8 +14,21 @@ function primeiroTurno() {
 }
 
 function turnos(turno) {
-  let manhas = document.querySelectorAll(`[data-periodo="${turno}"]`);
-  for (let i = 0; i < manhas.length; i++) {
-    manhas[i].classList.toggle("selecionada");
+  let turnosEncontrados = document.querySelectorAll(
+    `[data-periodo="${turno}"]`,
+  );
+  for (let i = 0; i < turnosEncontrados.length; i++) {
+    turnosEncontrados[i].classList.toggle("selecionada");
+  }
+}
+
+function limpar() {
+  let manhas = document.querySelectorAll(`[data-periodo="manha"]`);
+  let tardes = document.querySelectorAll(`[data-periodo="tarde"]`);
+  let noites = document.querySelectorAll(`[data-periodo="noite"]`);
+
+  let todosTurnos = [...manhas, ...tardes, ...noites];
+  for (let i = 0; i < todosTurnos.length; i++) {
+    todosTurnos[i].classList.remove("selecionada");
   }
 }

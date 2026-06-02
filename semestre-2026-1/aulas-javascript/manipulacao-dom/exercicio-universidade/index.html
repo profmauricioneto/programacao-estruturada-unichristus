@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Presença Universitária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Sistema de Presença de Alunos Universitários</h3>
+        <p>Insira o nome dos alunos presentes!</p>
+    </header>
+
+    <main>
+        <div class="secao">
+            <div>
+                <label for="nome">nome</label>
+            </div>
+            <input type="text" id="nome-aluno" name="nome" placeholder="Digite o nome do aluno" />
+            <div>
+                <button onclick="adicionarPresenca()" id="btn-inserir">Inserir</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <ol id="lista-presenca">
+            </ol>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

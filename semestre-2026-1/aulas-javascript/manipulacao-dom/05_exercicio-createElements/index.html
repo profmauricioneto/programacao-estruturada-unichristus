@@ -48,12 +48,12 @@
                         <option value="irregular">Irregular</option>
                     </select>
                 </div>
-                <button>Adicionar Aluno</button>
+                <button id="btn-add-aluno">Adicionar Aluno</button>
             </div>
 
             <div class="acoes-tabela">
                 <span id="total-alunos">Total: 0 aluno(s)</span>
-                <button class="vermelho sec">Remover Todos</button>
+                <button class="vermelho sec" onclick="limparTabela()">Remover Todos</button>
             </div>
 
             <table class="tabela-alunos" id="tabela-alunos">
@@ -84,6 +84,7 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
