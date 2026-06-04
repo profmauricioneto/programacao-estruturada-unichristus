@@ -158,7 +158,7 @@ button.vermelho:hover {
 /* Log de eventos */
 #log-eventos {
   background: #1e293b;
-  color: #94a3b8;
+  color: white;
   border-radius: 8px;
   padding: 14px;
   font-family: "Courier New", monospace;

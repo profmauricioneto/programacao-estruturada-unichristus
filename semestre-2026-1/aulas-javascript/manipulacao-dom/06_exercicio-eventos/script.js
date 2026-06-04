@@ -1,9 +1,51 @@
 let idValue = 0;
 
+linhas = document.querySelectorAll("tr");
+for (let i = 0; i < linhas.length; i++) {
+  linhas[i].addEventListener("mouseover", () => {
+    let previewLog = document.getElementById("log-eventos");
+    previewLog.innerHTML += geradorLog();
+    previewLog.scrollTop = 50;
+  });
+}
+
+function geradorLog() {
+  let data = new Date();
+  let log = `\n[${data.toLocaleDateString()} - passou por cima de uma linha da tabela!]`;
+  return log;
+}
+
 let btnAdicionarAluno = document.getElementById("btn-add-aluno");
 btnAdicionarAluno.addEventListener("click", () => {
   adicionarAluno();
 });
+
+let inputNome = document.getElementById("input-nome");
+inputNome.addEventListener("input", () => {
+  let previewArea = document.getElementById("preview-aluno");
+  previewArea.innerHTML = previewInformacoes();
+});
+
+let inputMatricula = document.getElementById("input-matricula");
+inputMatricula.addEventListener("input", () => {
+  let previewArea = document.getElementById("preview-aluno");
+  previewArea.innerHTML = previewInformacoes();
+});
+
+let inputStatus = document.getElementById("input-status");
+inputStatus.addEventListener("input", () => {
+  let previewArea = document.getElementById("preview-aluno");
+  previewArea.innerHTML = previewInformacoes();
+});
+
+function previewInformacoes() {
+  // pegar os dados fornecidos pelas entradas
+  nomeAluno = document.getElementById("input-nome").value;
+  matriculaAluno = document.getElementById("input-matricula").value;
+  statusAluno = document.getElementById("input-status").value;
+  let preview = `Nome: ${nomeAluno} | Matricula: ${matriculaAluno} | Status: ${statusAluno}`;
+  return preview;
+}
 
 function adicionarAluno() {
   // pegar os dados fornecidos pelas entradas
