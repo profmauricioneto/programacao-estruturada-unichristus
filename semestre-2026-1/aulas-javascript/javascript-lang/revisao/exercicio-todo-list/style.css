@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.area {
+  margin: 10px;
+  padding: 10px;
+}
+
+.area input {
+  padding: 10px;
+  width: 60%;
+}
+
+.area input:focus {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.area button {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #24a0ed;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.area button:hover {
+  background-color: #24b9ff;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 60%;
+}
+
+li:nth-child(even) {
+  background-color: lightgray;
+}
