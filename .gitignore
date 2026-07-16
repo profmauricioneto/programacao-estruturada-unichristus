@@ -1,3 +1,6 @@
+# ----------------------------------------------
+#   gitignore do java
+# ----------------------------------------------
 # Compiled class file
 *.class
 
@@ -55,6 +58,11 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+
+
+# ----------------------------------------------
+#   gitignore do nodejs
+# ----------------------------------------------
 
 # node-waf configuration
 .lock-wscript

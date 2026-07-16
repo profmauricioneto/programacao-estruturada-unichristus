@@ -1,4 +1,8 @@
-<h2 style="text-align: center">  
+<div style="margin: 0 auto;">
+<img src="/assets/logo_unichristus.jpg" style="width: 70%; height: auto;">
+</div>
+
+<h1 style="text-align: center">  
   <b>Programação Estruturada</b> 
   <br/>
   <b>Universidade Christus</b>
@@ -38,4 +42,4 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
   <li>Prof. Maurício Moreira Neto</li>
   <li><a href="http://lattes.cnpq.br/7534400645876830">Lattes</a></li>
   <li><a href="mailto:mauricio.moreira@unichristus.edu.br">Email</a></li>
-</ul>    
+</ul>
