@@ -9,23 +9,31 @@ public class CalculoPesoIdeal {
         String genero;
         double pesoIdeal = 0;
 
-        System.out.print("Digite seu genero[M/F]: ");
+        System.out.print("Digite seu genero[Masculino/Feminino]: ");
         genero = input.next();
 
         System.out.print("Digite sua altura: ");
         altura = input.nextDouble();
         // genero = genero.toUpperCase();
 
-        switch (genero) {
-            case "F":
-                pesoIdeal = 62.1 * altura - 44.7;
-                break;
-            case "M":
-                pesoIdeal = 72.7 * altura - 58;
-                break;
-            default:
-                System.out.println("Genero inválido!");
+        if (genero.equalsIgnoreCase("masculino") || genero.contains("masc")) {
+            pesoIdeal = 72.7 * altura - 58;
+        } else if (genero.equalsIgnoreCase("feminino") || genero.contains("fem")) {
+            pesoIdeal = 62.1 * altura - 44.7;
+        } else {
+            System.out.println("Genero Inválido.");
         }
+
+        // switch (genero) {
+        // case "F":
+        // pesoIdeal = 62.1 * altura - 44.7;
+        // break;
+        // case "M":
+        // pesoIdeal = 72.7 * altura - 58;
+        // break;
+        // default:
+        // System.out.println("Genero inválido!");
+        // }
         System.out.println("Peso Ideal = " + pesoIdeal);
     }
 }
