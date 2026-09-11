@@ -6,12 +6,10 @@
   <b>Programação Estruturada</b> 
   <br/>
   <b>Universidade Christus</b>
-  <br/>
-        :octocat:
+  <br/>:octocat:
 </h2>
 
-Este repositório tem o objetivo de auxiliar os alunos da disciplina de Programação Estruturada da Universidade Christus.
-Para isso, o repositório armazenará os códigos dos exercícios resolvidos em sala de aula, os pequenos projetos desenvolvidos, etc.
+Este repositório tem o objetivo de auxiliar os alunos da disciplina de Programação Estruturada da Universidade Christus. Para isso, o repositório armazenará os códigos dos exercícios resolvidos em sala de aula, os pequenos projetos desenvolvidos, etc.
 
 ---
 
@@ -42,4 +40,5 @@ Para isso, o repositório armazenará os códigos dos exercícios resolvidos em 
   <li>Prof. Maurício Moreira Neto</li>
   <li><a href="http://lattes.cnpq.br/7534400645876830">Lattes</a></li>
   <li><a href="mailto:mauricio.moreira@unichristus.edu.br">Email</a></li>
+  <li><a href="https://unichristus.gitbook.io/programacao-estruturada/">Lista de Exercicios</a></li>
 </ul>
