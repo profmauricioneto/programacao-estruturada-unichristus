@@ -4,15 +4,17 @@ import java.util.Scanner;
 
 public class Calculadora {
 
-    public static double divisao(double a, double b) {
-        try {
-            return a / b;
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
-            return 0;
-        } finally {
-            System.out.println("Executando pós try-catch");
-        }
+    public static double divisao(double a, double b) throws ArithmeticException {
+        return a / b;
+        // try {
+        // return a / b;
+        // } catch (ArithmeticException e) {
+        // System.out.println(e.getMessage());
+        // return 0;
+        // } finally {
+        // System.out.println("Executando pós try-catch");
+        // }
+
         // if (b == 0) {
         // System.out.println("Erro: não é possível divisao por zero");
         // return 0;
@@ -85,7 +87,11 @@ public class Calculadora {
                         break;
                     }
                     case 4: {
-                        resultado = divisao(valor1, valor2);
+                        try {
+                            resultado = divisao(valor1, valor2);
+                        } catch (ArithmeticException e) {
+                            throw new ArithmeticException("/ by zero");
+                        }
                         break;
                     }
                     case 5: {
