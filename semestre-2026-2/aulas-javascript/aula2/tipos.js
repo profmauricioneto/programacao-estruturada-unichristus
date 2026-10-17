@@ -31,3 +31,10 @@ mensagem = `Nome do usuario: ${nomeCompleto}
 idade: ${idade + 5}
 `;
 console.log(mensagem);
+
+console.log("mauricio".length);
+console.log("mauricio".lastIndexOf("k"));
+
+console.log(typeof ("3" + 4 + 5));
+
+console.log("3" === 3);
