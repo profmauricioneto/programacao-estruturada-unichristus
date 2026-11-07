@@ -21,12 +21,30 @@ const pedidos = [
 // });
 // console.log(maioresValores);
 
-let clientesFiltrados = pedidos
+pedidos
   .filter(function (pedido) {
     return pedido.status === "entregue";
   })
   .filter(function (pedido) {
     return pedido.valor >= 300;
+  })
+  .forEach(function (pedido) {
+    console.log(
+      `Cliente: ${pedido.cliente} (ID: ${pedido.id}) | valor pedido = R$ ${pedido.valor} | Estado do pedido: ${pedido.status}`,
+    );
   });
 
-console.log(clientesFiltrados);
+// console.log(clientesFiltrados);
+
+function procurarPorId(id) {
+  return pedidos.find(function (p) {
+    return p.id === id;
+  });
+}
+
+let usuarioEncontrado = procurarPorId(4);
+let resultado =
+  usuarioEncontrado === undefined
+    ? "Não foi encontrado informação com base nesse id"
+    : usuarioEncontrado;
+console.log(resultado);

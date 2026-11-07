@@ -22,3 +22,10 @@ let alunos = ["joao", "pedro", "rafael", "miguel", "zacarias"];
 alunos.forEach(function (aluno) {
   console.log("Nome aluno: " + aluno);
 });
+
+let numeros = [3, 4, 7, 8];
+let novosNumeros = numeros.map(function (num) {
+  return num * 2;
+});
+console.log(novosNumeros);
+console.log(numeros);
